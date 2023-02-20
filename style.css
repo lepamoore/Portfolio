@@ -349,3 +349,51 @@ h1 {
     text-transform: uppercase;
     font-weight: 400;
 }
+
+.coloredSquare {
+    height: 5vh;
+    width: 5vh;
+    background-color: #006e6e;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+
+.githubBtn {
+    background-color: #002020;
+    border: 1px solid rgb(0, 186, 186);
+    width: 30vw;
+    height: 6vh;
+    margin-bottom: 3vh;
+    margin-right: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.githubBtn * {
+    display: inline;
+}
+
+.githubBtn i {
+    color: #dedede;
+    display: inline;
+}
+
+.githubBtn p {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.liveBtn {
+    width: 30vw;
+    height: 6vh;
+    background-color: rgb(0, 186, 186);
+    border: 1px solid rgb(0, 186, 186);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vh;
+    margin-left: 3vw;
+}
