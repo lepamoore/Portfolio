@@ -397,3 +397,70 @@ h1 {
     margin-bottom: 3vh;
     margin-left: 3vw;
 }
+
+.liveBtnText {
+    text-decoration: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#projectControls {
+    font-size: 3rem;
+    color: #dedede;
+}
+
+#leftProjectArr {
+    margin-right: 2.5vw;
+}
+
+#rightProjectArr {
+    margin-left: 2.5vw;
+}
+
+#contactSec {
+    margin-top: 10vh;
+}
+
+label {
+    color: #002020;
+}
+input, textarea {
+    background-color: rgb(0, 43, 43);
+    border: 1px solid rgb(0, 186, 186);
+    width: 100%;
+    text-align: left;
+    color: #dedede;
+}
+
+input {
+    height: 7vh;
+    padding: 0 2rem;
+
+}
+
+textarea {
+    padding: 1rem 2rem;
+}
+
+*::placeholder {
+    color: #dedede;
+}
+
+#submit {
+    background-color: rgb(0, 186, 186);
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+#waves2 {
+    width: 100%;
+}
+
+#fastContactSec {
+    background: #002020;
+    background: linear-gradient(to top, #002020 10%, #006E6E 40%);
+}
