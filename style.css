@@ -444,9 +444,25 @@ textarea {
 
 #waves2 {
     width: 100%;
+    position: relative;
+    top: 1vh;
 }
 
-#fastContactSec {
-    background: #002020;
-    background: linear-gradient(to top, #002020 10%, #006E6E 40%);
+footer {
+    background-color: #006e6e;
+}
+
+#greetMemoji {
+    width: 80vw;
+    margin: 0;
+    position: relative;
+    top: 0.6vh;
+}
+
+#hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #dedede;
+    margin: 0;
+    z-index: 50;
 }
