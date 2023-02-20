@@ -115,14 +115,36 @@ a {
 }
 
 #nav {
-    position: absolute;
-    left: 100%;
+    position: fixed;
+    top: -35vh;
+    /*top: 9.6vh;*/
+    left: 00%;
     display: none;
+    z-index: 900;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #002020;
+    background: linear-gradient(to left, #002020 0%, #006e6e 75%); 
 }
+
+
 
 #navList {
     list-style-type: none;
 }
+
+
+#navList li {
+    text-align: center;
+    padding: 2.5vh 33vw;
+    border-top: 1px solid rgb(0, 186, 186);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
 
 /*  MAIN    */
 
@@ -239,7 +261,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1vh;
+    margin-top: 3vh;
 }
 
 #projectsSec {
