@@ -257,7 +257,7 @@ h1 {
 .project2 {
     border: 1px solid transparent;
     height: 44vh;
-    width: 98%;
+    width: 100%;
     background-color: #006e6e;
    /* background: linear-gradient(to top, #002020 10%, #006E6E 75%); */
 }
@@ -280,41 +280,33 @@ h1 {
     margin: 5vh 0;
 }
 
-.gradientBorderDiv2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 45vh;
-    width: 100%;
-    background: #002020;
-    background: linear-gradient(to top, #002020 10%, #006E6E 75%);
-    margin: 5vh 0;
-
-}
-
 #gradientId1 {
-    position: absolute;
-    top: 458.9%;
-    left: -81vw;
+    position: relative;
+    bottom: 0vh;
+    left: -78vw;
     width: 90%;
     transform: scale(0.85);
 }
 
 #gradientId2 {
-    position: absolute;
-    top: 458.9%;
+    position: relative;
+    bottom: 50vh;
     left: 5vw;
     width: 90%;
 }
 
 #gradientId3 {
-    position: absolute;
-    top: 458.9%;
-    right: -81vw;
+    position: relative;
+    bottom: 100vh;
+    left: 87vw;
     width: 90%;
     transform: scale(0.85);
 }
 
+#projectsOnlyDiv{
+
+    height: 50vh;
+}
 
 .projectBgImg {
     background-repeat: no-repeat;
