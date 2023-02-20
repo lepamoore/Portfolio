@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leon Moore</title>
+    <title>Portfolio | Leon Moore</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://kit.fontawesome.com/fecf12a8da.js" crossorigin="anonymous"></script>
@@ -12,12 +12,14 @@
 <body>
     <header>
         <div id="navbar">
-            <img src="./memojis/memojiGreet.png" alt="" id="Logo">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-xmark"></i>
+            <img src="./memojis/memojiGreet.png" alt="" id="logo">
+            <div id="iconBg">
+                <i class="fa-solid fa-bars navIcon" id="bars"></i>
+                <i class="fa-solid fa-xmark navIcon" id="x"></i>
+            </div>
         </div>
-        <nav>
-            <ul>
+       <!-- <nav id="nav">
+            <ul id="navList">
                 <a href="#">
                     <li>Start</li>
                 </a><a href="#">
@@ -34,151 +36,209 @@
                     <li>Footer</li>
                 </a>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main>
+
         <section id="heroSec">
-            <h2>Welcome to my Portfolio</h2>
-            <h1>I'm Leon Moore,</h1>
-            <h2>A Frontend Developer</h2>
-            <p>Based in Germany. Coding is pleasure for me. 
-                I really like to Code complicated, interactive and awesome websites 
-                for my Clients. Here in my Portfolio you can find some recent Projects of mine.
-                I hope you like them!
-                and if you got any questions please don't hesitate contacting me!
-            </p>
-            <img src="./memojis/memojiLaptop.png" alt="">
-            <div class="heroIcons" id="heroIconDivHTML">
-                <i class="devicon-html5-plain"></i>
-              </div>
-            <div class="heroIcons" id="heroIconDivCSS">
-                <i class="devicon-css3-plain"></i>
-              </div>
-            <div class="heroIcons" id="heroIconDivJS">
-                <i class="devicon-javascript-plain"></i>
-              </div>
-              <img src="./waves/wave.svg" alt="">
+            <div class="containerDiv">
+                <h3>Welcome to my Portfolio</h3>
+                <h1>My name is Leon Moore</h1>
+                <p id="introParagraph">I'm a Frontend Developer based in Germany. Coding is a pleasure for me.<br> 
+                    For more info just continue. 😉
+                    <!--I really like to Code interactive and accessible websites 
+                    for my Clients. Here in my Portfolio you can find some recent Projects of mine.
+                    When you got any questions please don't hesitate contacting me! -->
+                </p>
+                <img src="./memojis/memojiLaptop.png" alt="" id="laptopMemoji">
+                <div class="heroIcons" id="heroIconDivHTML">
+                    <i class="devicon-html5-plain"></i>
+                </div>
+                <div class="heroIcons" id="heroIconDivCSS">
+                    <i class="devicon-css3-plain"></i>
+                </div>
+                <div class="heroIcons" id="heroIconDivJS">
+                    <i class="devicon-javascript-plain"></i>
+                </div>
+            </div>
+            <img src="./waves/wave.svg" alt="" id="wave1">
         </section>
+
         <section id="aboutMeSec">
-            <h2>About Me</h2>
-            <div class="borderDiv"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minima delectus repellendus enim et similique fuga voluptatem, quibusdam totam eaque eius laboriosam reiciendis est dicta pariatur culpa commodi id doloribus?</p>
-            <img src="./memojis/memojiSmile.png" alt="">
+            <div class="containerDiv">
+                <h2 id="aboutHeading">About Me</h2>
+                <div class="borderDiv"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minima delectus repellendus enim et similique fuga voluptatem, quibusdam totam eaque eius laboriosam reiciendis est dicta pariatur culpa commodi id doloribus?</p>
+                <div class="imgCenter">
+                    <img src="./memojis/memojiBlink.png" alt="" id="blinkingMemoji">
+                </div>
+            </div>
         </section>
+
         <section id="skillSec">
-            <h2>My Skills</h2>
-            <div class="borderDiv"></div>
-            <div class="skillContainer">
-                <i class="devicon-html5-plain"></i>
-                <h2></h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur iste libero nesciunt.</p>
-            </div>
-            <div class="skillContainer">
-                <i class="devicon-css3-plain"></i>
-                <h2></h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur iste libero nesciunt.</p>
-            </div>
-            <div class="skillContainer">
-                <i class="devicon-javascript-plain"></i>
-                <h2></h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur iste libero nesciunt.</p>
-            </div>
-            <div class="skillContainer">
-                <i class="devicon-git-plain"></i>
-                <h2></h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur iste libero nesciunt.</p>
-            </div>
-            <div class="skillContainer">
-                <i class="devicon-bash-plain"></i>
-                <h2></h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur iste libero nesciunt.</p>
+            <div class="containerDiv">
+                <h2>My Skills</h2>
+                <div class="borderDiv"></div>
+                <div class="skillContainer">
+                    <div class="skillCenterContainer">
+                        <i class="devicon-html5-plain skillIcons"></i>
+                    </div>
+                    <h2 class="skillTitle">html</h2>
+                    <div class="skillCenterContainer">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur iste libero nesciunt.</p>
+                    </div>
+                </div>
+                <div class="skillContainer">
+                    <div class="skillCenterContainer">
+                        <i class="devicon-css3-plain skillIcons"></i>
+                    </div>
+                    <h2 class="skillTitle">css</h2>
+                    <div class="skillCenterContainer">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur iste libero nesciunt.</p>
+                    </div>
+                </div>
+                <div class="skillContainer">
+                    <div class="skillCenterContainer">
+                        <i class="devicon-javascript-plain skillIcons"></i>
+                    </div>
+                    <h2 class="skillTitle">javascript</h2>
+                    <div class="skillCenterContainer">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur iste libero nesciunt.</p>
+                    </div>
+                </div>
+                <div class="skillContainer">
+                    <div class="skillCenterContainer">
+                        <i class="devicon-git-plain skillIcons"></i>
+                    </div>
+                    <h2 class="skillTitle">git</h2>
+                    <div class="skillCenterContainer">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur iste libero nesciunt.</p>
+                    </div>
+                </div>
+                <div class="skillContainer">
+                    <div class="skillCenterContainer">
+                        <i class="devicon-bash-plain skillIcons"></i>
+                    </div>
+                    <h2 class="skillTitle">bash</h2>
+                    <div class="skillCenterContainer">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur iste libero nesciunt.</p>
+                    </div>
+                </div>
             </div>
         </section>
+
         <section id="projectsSec">
-            <h2>My Latest Projects</h2>
-            <div class="borderDiv"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est esse ex ipsum officia tenetur dolorum sit, enim explicabo modi eveniet.</p>
-            <div class="project" id="project1">
-                <h3>Project Name</h3>
-                <div class="projectBgImg" id="projectBgImg1">
-                    <a href="#">
-                        <button class="githubBtn"> 
-                            <i class="devicon-github-original colored"></i>
-                            <p class="githubBtnText">Get Code</p>
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button>
-                            <p>Live Page</p>
-                        </button>
-                    </a>
+            <div class="containerDiv">
+                <h2>My Latest Projects</h2>
+                <div class="borderDiv"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est esse ex ipsum officia tenetur dolorum sit, enim explicabo modi eveniet.</p>
+                <div id="projectsOnlyDiv">
+                    <div class="gradientBorderDiv">
+                        <div class="project" id="project1">
+                            <div class="projectTitle imgCenter">
+                                <h3 class="projectHeading">Product Page</h3>
+                                <div class="coloredSquare"></div>
+                            </div>
+                            <div class="projectBgImg" id="projectBgImg1">
+                                <a href="#">
+                                    <button class="githubBtn"> 
+                                        <i class="devicon-github-original"></i>
+                                        <p class="githubBtnText">Get Code</p>
+                                    </button>
+                                </a>
+                                <a href="#">
+                                    <button class="liveBtn">
+                                        <p class="liveBtnText">Live Page</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gradientBorderDiv">
+                    <div class="project" id="project2">
+                            <div class="projectTitle imgCenter">
+                                <h3 class="projectHeading">Newsletter Sign-up</h3>
+                                <div class="coloredSquare"></div>
+                            </div>
+                            <div class="projectBgImg" id="projectBgImg2">
+                                <a href="#">
+                                    <button class="githubBtn"> 
+                                        <i class="devicon-github-original"></i>
+                                        <p class="githubBtnText">Get Code</p>
+                                    </button>
+                                </a>
+                                <a href="#">
+                                    <button class="liveBtn">
+                                        <p class="liveBtnText">Live Page</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gradientBorderDiv">
+                        <div class="project" id="project3">
+                            <div class="projectTitle imgCenter">
+                                <h3 class="projectHeading">Grid Information</h3>
+                                <div class="coloredSquare"></div>
+                            </div>
+                            <div class="projectBgImg" id="projectBgImg3">
+                                <a href="#">
+                                    <button class="githubBtn">                                     
+                                        <i class="devicon-github-original"></i>
+                                        <p class="githubBtnText">Get Code</p>
+                                    </button>
+                                </a>
+                                <a href="#">
+                                    <button class="liveBtn">
+                                        <p class="liveBtnText">Live Page</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="project" id="project2">
-                <h3>Project Name</h3>
-                <div class="projectBgImg" id="projectBgImg2">
-                    <a href="#">
-                        <button class="githubBtn"> 
-                            <i class="devicon-github-original colored"></i>
-                            <p class="githubBtnText">Get Code</p>
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button>
-                            <p>Live Page</p>
-                        </button>
-                    </a>
+                <div id="projectControls">
+                    <i class="fa-solid fa-circle-arrow-left" id="leftProjectArr"></i>
+                    <i class="fa-solid fa-circle-arrow-right" id="rightProjectArr"></i>
                 </div>
-            </div>
-            <div class="project" id="project3">
-                <h3>Project Name</h3>
-                <div class="projectBgImg" id="projectBgImg3">
-                    <a href="#">
-                        <button class="githubBtn"> 
-                            <i class="devicon-github-original colored"></i>
-                            <p class="githubBtnText">Get Code</p>
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button>
-                            <p>Live Page</p>
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <div id="projectControls">
-                <i class="fa-solid fa-circle-arrow-left" id="leftProjectArr"></i>
-                <i class="fa-solid fa-circle-arrow-right" id="rightProjectArr"></i>
             </div>
         </section>
+
         <section class="contactSec">
-            <h2>Contact Me</h2>
-            <div class="borderDiv"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui quis nam. Quae sed quasi consequuntur debitis, quisquam voluptatem dolores.</p>
-            <form action="">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
-                <label for="email">E-Mail-Adress:</label>
-                <input type="email" name="email" id="email">
-                <label for="subject">Subject:</label>
-                <input type="text" name="subject" id="subject">
-                <label for="message">Your Message:</label>
-                <textarea name="message" id="message" cols="40" rows="10"></textarea>
-                <input type="submit" value="SEND">
-            </form>
+            <div class="containerDiv">
+                <h2>Contact Me</h2>
+                <div class="borderDiv"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui quis nam. Quae sed quasi consequuntur debitis, quisquam voluptatem dolores.</p>
+                <form action="">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">E-Mail-Adress:</label>
+                    <input type="email" name="email" id="email">
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject">
+                    <label for="message">Your Message:</label>
+                    <textarea name="message" id="message" cols="40" rows="10"></textarea>
+                    <input type="submit" value="SEND">
+                </form>
+                <div class="containerDiv">
         </section>
+
         <section id="fastContactSec">
-            <div>
-                <img src="./memojis/memojiIdea.png" id="ideaMemoji">
-            </div>
-            <img src="./waves/wave-5.svg" alt="">
-            <div>
-                <h2>You prefere Whatsapp over Email?</h2>
-                <h3>Text me on whatsapp 👇</h3>
-                <button>Open Whatsapp Chat</button>
+            <div class="containerDiv">
+                <div>
+                    <img src="./memojis/memojiIdea.png" id="ideaMemoji">
+                </div>
+                <img src="./waves/wave-5.svg" alt="">
+                <div>
+                    <h2>You prefere Whatsapp over Email?</h2>
+                    <h3>Text me on whatsapp 👇</h3>
+                    <button>Open Whatsapp Chat</button>
+                </div>
             </div>
         </section>
+
     </main>
+
     <footer>
         <img src="./memojis/memojiGreet.png" alt="">
         <hr>
