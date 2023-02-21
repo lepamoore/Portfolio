@@ -98,20 +98,30 @@ a {
 }
 
 #bars {
-    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 #iconBg {
     background-color: rgb(0, 186, 186);
     height: 100%;
     width: 18vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
 #x {
-    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 #nav {
@@ -126,6 +136,7 @@ a {
     justify-content: center;
     background: #002020;
     background: linear-gradient(to left, #002020 0%, #006e6e 75%); 
+    transition: top 1s;
 }
 
 
@@ -157,7 +168,8 @@ main {
 #heroSec {
     background: #002020;
     background: linear-gradient(to left, #00202000 0%, #006e6e 75%);  
-    padding-top: 5vh;
+    padding-top: 10vh;
+    margin-top: -5vh;
     padding-bottom: 0;
     height: 90vh;
     width: 100%;
@@ -226,7 +238,8 @@ h1 {
 
 #aboutMeSec {
     height: 90vh;
-    padding-top: 5vh;
+    padding-top: 15vh;
+    margin-top: -5vh;
 }
 
 
@@ -238,6 +251,11 @@ h1 {
 
 #blinkingMemoji {
     width: 80vw;
+}
+
+#skillSec {
+    padding-top: 12vh;
+    margin-top: -12vh;
 }
 
 .skillContainer {
@@ -265,7 +283,8 @@ h1 {
 }
 
 #projectsSec {
-    padding-top: 10vh;
+    padding-top: 15vh;
+    margin-top: -5vh;
 }
 
 .project {
@@ -300,6 +319,7 @@ h1 {
     background: #002020;
     background: linear-gradient(to top, #002020 10%, #006E6E 75%);
     margin: 5vh 0;
+    transition: all 1s;
 }
 
 #gradientId1 {
@@ -342,7 +362,7 @@ h1 {
 }
 
 #projectBgImg1 {
-    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/productDesktopView.png);
+    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/codeWellMeetDesktop.png);
 }
 
 #projectBgImg2 {
@@ -420,14 +440,17 @@ h1 {
 
 #leftProjectArr {
     margin-right: 2.5vw;
+    transition: color 0.5s;
 }
 
 #rightProjectArr {
     margin-left: 2.5vw;
+    transition: color 0.5s;
 }
 
 #contactSec {
-    margin-top: 10vh;
+    padding-top: 15vh;
+    margin-top: -5vh;
 }
 
 label {
