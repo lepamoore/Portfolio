@@ -30,13 +30,8 @@ function mobileMenuXClick() {
 
 // Callback functions Projects
 
-
-function returnNum() {
-
-}
-
 function clickLeft() {
-    if(i > 0) {
+    if(i > 1) {
     i--;
     mobileProjectSlide(i);
     if(i == 1) {
@@ -50,7 +45,7 @@ function clickLeft() {
 }
 
 function clickRight() {
-    if(i < 4) {
+    if(i < 3) {
     i++;
     mobileProjectSlide(i);
     if(i == 3) {

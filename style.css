@@ -362,15 +362,15 @@ h1 {
 }
 
 #projectBgImg1 {
-    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/codeWellMeetDesktop.png);
+    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/codeWellMeetDesktop.webp);
 }
 
 #projectBgImg2 {
-    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/podDesktopView.png);
+    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/podDesktopView.webp);
 }
 
 #projectBgImg3 {
-    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/gridDesktopView\ Kopie.png);
+    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/gridDesktopView.webp);
 }
 
 .projectHeading {
