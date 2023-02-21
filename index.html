@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Leon Moore</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/fecf12a8da.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div id="navbar">
+            <img src="./memojis/memojiGreet.png" alt="" id="logo">
+            <div id="iconBg">
+                <i class="fa-solid fa-bars navIcon" id="bars"></i>
+                <i class="fa-solid fa-xmark navIcon" id="x"></i>
+            </div>
+        </div>
+        <nav id="nav">
+            <ul id="navList">
+                <a href="#heroSec">
+                    <li>Start</li>
+                </a><a href="#aboutMeSec">
+                    <li>About Me</li>
+                </a><a href="#skillSec">
+                    <li>My Skills</li>
+                </a><a href="#projectsSec">
+                    <li>Latest Projects</li>
+                </a><a href="#contactSec">
+                    <li>Contact Me</li>
+                </a>
+            </ul>
+        </nav> 
+    </header>
+    <main>
+
+        <section id="heroSec">
+            <div class="containerDiv">
+                <h3>Welcome to my Portfolio</h3>
+                <h1>My name is Leon Moore</h1>
+                <p id="introParagraph">I'm a Frontend Developer based in Germany. Coding is a pleasure for me.<br> 
+                    For more info just continue. 😉
+                </p>
+                <img src="./memojis/memojiLaptop.png" alt="" id="laptopMemoji">
+                <div class="heroIcons" id="heroIconDivHTML">
+                    <i class="devicon-html5-plain"></i>
+                </div>
+                <div class="heroIcons" id="heroIconDivCSS">
+                    <i class="devicon-css3-plain"></i>
+                </div>
+                <div class="heroIcons" id="heroIconDivJS">
+                    <i class="devicon-javascript-plain"></i>
+                </div>
+            </div>
+            <img src="./waves/wave.svg" alt="" id="wave1">
+        </section>
+
+        <section id="aboutMeSec">
+            <div class="containerDiv">
+                <h2 id="aboutHeading">About Me</h2>
+                <div class="borderDiv"></div>
+                <p>I'm a 21-year-old Frontend Developer based in Berlin. I really love coding. Specifically, when it takes longer to find the weak point in the code, and you are on the verge of despair, it is best to find the solution. I am pleased that you have landed on my portfolio, please take a look around!</p>
+                <div class="imgCenter">
+                    <img src="./memojis/memojiBlink.png" alt="" id="blinkingMemoji">
+                </div>
+            </div>
+        </section>
+
+        <section id="skillSec">
+            <div class="containerDiv">
+                <h2>My Skills</h2>
+                <div class="borderDiv"></div>
+                <div class="skillContainer">
+                    <div class="skillCenterContainer">
+                        <i class="devicon-html5-plain skillIcons"></i>
+                    </div>
+                    <h2 class="skillTitle">html</h2>
+                    <div class="skillCenterContainer">
+                        <p>The skeleton of each website in the World Wide Web</p>
+                    </div>
+                </div>
+                <div class="skillContainer">
+                    <div class="skillCenterContainer">
+                        <i class="devicon-css3-plain skillIcons"></i>
+                    </div>
+                    <h2 class="skillTitle">css</h2>
+                    <div class="skillCenterContainer">
+                        <p>What would HTML be without CSS? Boring at best!</p>
+                    </div>
+                </div>
+                <div class="skillContainer">
+                    <div class="skillCenterContainer">
+                        <i class="devicon-javascript-plain skillIcons"></i>
+                    </div>
+                    <h2 class="skillTitle">javascript</h2>
+                    <div class="skillCenterContainer">
+                        <p>JavaScript for functionality. We want something to happen when we press a button!</p>
+                    </div>
+                </div>
+                <div class="skillContainer">
+                    <div class="skillCenterContainer">
+                        <i class="devicon-git-plain skillIcons"></i>
+                    </div>
+                    <h2 class="skillTitle">git</h2>
+                    <div class="skillCenterContainer">
+                        <p>GitHub is an awesome version control tool.<br>You can say Git is the language of GitHub.</p>
+                    </div>
+                </div>
+                <div class="skillContainer">
+                    <div class="skillCenterContainer">
+                        <i class="devicon-bash-plain skillIcons"></i>
+                    </div>
+                    <h2 class="skillTitle">bash</h2>
+                    <div class="skillCenterContainer">
+                        <p>Bash is an incredibly useful language for using the shell!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projectsSec">
+            <div class="containerDiv">
+                <h2>My Latest Projects</h2>
+                <div class="borderDiv"></div>
+                <p>Here you can, for example, call up the code or the live page of my most recent projects. Please don't hesitate to give me constructive feedback. You are also welcome to use the contact form, which you can find below!</p>
+
+                <div id="projectsOnlyDiv">
+
+                    <div class="gradientBorderDiv" id="gradientId1">
+                        <div class="project" id="project1">
+                            <div class="projectTitle imgCenter">
+                                <h3 class="projectHeading">Meeet.</h3>
+                                <div class="coloredSquare"></div>
+                            </div>
+                            <div class="projectBgImg" id="projectBgImg1">
+                                <a href="https://github.com/lepamoore/Codewell-Meeet.">
+                                    <button class="githubBtn"> 
+                                        <i class="devicon-github-original"></i>
+                                        <p class="githubBtnText">Get Code</p>
+                                    </button>
+                                </a>
+                                <a href="https://lepamoore.github.io/Codewell-Meeet./">
+                                    <button class="liveBtn">
+                                        <p class="liveBtnText">Live Page</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gradientBorderDiv" id="gradientId2">
+                    <div class="project" id="project2">
+                            <div class="projectTitle imgCenter">
+                                <h3 class="projectHeading">Podcast Sign-up</h3>
+                                <div class="coloredSquare"></div>
+                            </div>
+                            <div class="projectBgImg" id="projectBgImg2">
+                                <a href="https://github.com/lepamoore/Frontendmentorio-Project4-Podcast">
+                                    <button class="githubBtn"> 
+                                        <i class="devicon-github-original"></i>
+                                        <p class="githubBtnText">Get Code</p>
+                                    </button>
+                                </a>
+                                <a href="https://lepamoore.github.io/Frontendmentorio-Project4-Podcast/">
+                                    <button class="liveBtn">
+                                        <p class="liveBtnText">Live Page</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gradientBorderDiv" id="gradientId3">
+                        <div class="project" id="project3">
+                            <div class="projectTitle imgCenter">
+                                <h3 class="projectHeading">Grid Information</h3>
+                                <div class="coloredSquare"></div>
+                            </div>
+                            <div class="projectBgImg" id="projectBgImg3">
+                                <a href="#">
+                                    <button class="githubBtn">                                     
+                                        <i class="devicon-github-original"></i>
+                                        <p class="githubBtnText">Get Code</p>
+                                    </button>
+                                </a>
+                                <a href="#">
+                                    <button class="liveBtn">
+                                        <p class="liveBtnText">Live Page</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="projectControls">
+                    <i class="fa-solid fa-circle-arrow-left" id="leftProjectArr"></i>
+                    <i class="fa-solid fa-circle-arrow-right" id="rightProjectArr"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactSec">
+            <div class="containerDiv">
+                <h2>Contact Me</h2>
+                <div class="borderDiv"></div>
+                <form action="https://formspree.io/f/xgebkyrr"
+                method="POST">
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name" id="name" placeholder="Your Name"><br>
+                    <label for="email">E-Mail-Adress:</label><br>
+                    <input type="email" name="email" id="email" placeholder="Your E-Mail-Adress"><br>
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" name="subject" id="subject" placeholder="Subject"><br>
+                    <label for="message">Your Message:</label><br>
+                    <textarea name="message" id="message" cols="40" rows="10" placeholder="Your Message"></textarea><br>
+                    <input type="submit" value="SUBMIT" id="submit">
+                </form>
+            </div>
+        </section>
+        
+
+
+    </main>
+    <img src="./waves/wave-5.svg" alt="" id="waves2">
+    
+    <footer>
+        <img src="./memojis/memojiGreet.png" alt="" id="greetMemoji">
+        <div id="hr"></div>
+        <p>&copy; Copyright 2023 By Leon Moore.<br>All Rights Reserved.</p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
