@@ -115,4 +115,3 @@ function myFunction(x) {
   }
 
 var x = window.matchMedia("(max-width: 767px)");
-myFunction(x);
