@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/*  GENERAL */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Source Sans Pro"; /*  INSERT FALLBACK FONTS HERE !!!*/
+    text-align: center;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #002020;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+h3 {
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.borderDiv {
+    height: 1px;
+    width: 40vw;
+    border: 2px solid rgb(0, 186, 186);
+    border-radius: 5px;
+    margin: 2vh auto;
+}
+
+.containerDiv {
+    width: 90%;
+    margin: auto;
+}
+
+p {
+    color:#dedede; 
+    padding: 3vh 0;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    /* color: #9c9c9c88; */
+}
+
+i {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #dedede;
+}
+
+/*  HEADER  */
+
+#header {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 900;
+}
+
+#navbar {
+    display: flex;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(10vh - 1px); /* -1px because of the bottom border which is 1px */
+    background: #002020;
+    background: radial-gradient(circle farthest-corner at right center, #002020 0%, #006E6E 100%);
+    border-bottom: 1px solid rgb(0, 186, 186);
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    height: 10vh;
+    padding: 1vh 0 0 1vw;
+}
+
+.navIcon {
+    font-size: 2rem;
+    top: 0;
+    right: 0;
+    color: white;
+}
+
+#bars {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+#iconBg {
+    background-color: rgb(0, 186, 186);
+    height: 100%;
+    width: 18vw;
+    position: relative;
+}
+
+#x {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+#nav {
+    position: fixed;
+    top: -35vh;
+    /*top: 9.6vh;*/
+    left: 00%;
+    display: none;
+    z-index: 900;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #002020;
+    background: linear-gradient(to left, #002020 0%, #006e6e 75%); 
+    transition: top 1s;
+}
+
+
+
+#navList {
+    list-style-type: none;
+}
+
+
+#navList li {
+    text-align: center;
+    padding: 2.5vh 33vw;
+    border-top: 1px solid rgb(0, 186, 186);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+
+/*  MAIN    */
+
+main {
+    margin-top: 10vh;
+}
+
+/* HERO SECTION */
+
+#heroSec {
+    background: #002020;
+    background: linear-gradient(to left, #00202000 0%, #006e6e 75%);  
+    padding-top: 10vh;
+    margin-top: -5vh;
+    padding-bottom: 0;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+
+h1 {
+    margin-top: 1vh;
+}
+
+#introParagraph {
+    color:#dedede; 
+    padding: 3vh 0;
+}
+
+#laptopMemoji {
+    width: 80vw;
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.heroIcons {
+    position: absolute;
+    height: 14vw;
+    width: 14vw;
+    background-color: #002020;
+    border: 1px solid rgb(0, 186, 186);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroIcons i {
+    color: white;
+    transform: rotate(-45deg);
+}
+
+#heroIconDivHTML {
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, 0) rotate(45deg);
+}
+
+#heroIconDivCSS {
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, 0) rotate(45deg);
+}
+
+#heroIconDivJS {
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%, 0) rotate(45deg);
+}
+
+#wave1 {
+    position: absolute;
+    bottom: -0.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+}
+
+#aboutMeSec {
+    height: 90vh;
+    padding-top: 15vh;
+    margin-top: -5vh;
+}
+
+
+.imgCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blinkingMemoji {
+    width: 80vw;
+}
+
+#skillSec {
+    padding-top: 12vh;
+    margin-top: -12vh;
+}
+
+.skillContainer {
+    margin-top: 5vh;
+    padding: 3vh;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(5, 57, 57);
+    border: 1px solid rgb(0, 186, 186);
+}
+
+.skillIcons {
+    font-size: 4rem;
+}
+
+.skillTitle {
+    margin-top: 1vh;
+}
+
+.skillCenterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+#projectsSec {
+    padding-top: 15vh;
+    margin-top: -5vh;
+}
+
+.project {
+    border: 1px solid transparent;
+    height: 44vh;
+    width: 98%;
+    background-color: #006e6e;
+   /* background: linear-gradient(to top, #002020 10%, #006E6E 75%); */
+}
+
+.project2 {
+    border: 1px solid transparent;
+    height: 44vh;
+    width: 100%;
+    background-color: #006e6e;
+   /* background: linear-gradient(to top, #002020 10%, #006E6E 75%); */
+}
+
+.projectTitle {
+    height: 10vh;
+    background-color: #006e6e;
+    position: relative;
+    width: 100%;
+}
+
+.gradientBorderDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    width: 100%;
+    background: #002020;
+    background: linear-gradient(to top, #002020 10%, #006E6E 75%);
+    margin: 5vh 0;
+    transition: all 1s;
+}
+
+#gradientId1 {
+    position: relative;
+    bottom: 0vh;
+    left: -78vw;
+    width: 90%;
+    transform: scale(0.85);
+}
+
+#gradientId2 {
+    position: relative;
+    bottom: 50vh;
+    left: 5vw;
+    width: 90%;
+}
+
+#gradientId3 {
+    position: relative;
+    bottom: 100vh;
+    left: 87vw;
+    width: 90%;
+    transform: scale(0.85);
+}
+
+#projectsOnlyDiv{
+
+    height: 50vh;
+}
+
+.projectBgImg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 34vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#projectBgImg1 {
+    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/codeWellMeetDesktop.webp);
+}
+
+#projectBgImg2 {
+    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/podDesktopView.webp);
+}
+
+#projectBgImg3 {
+    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/gridDesktopView.webp);
+}
+
+.projectHeading {
+    font-weight: 400;
+    z-index: 5;
+}
+
+.coloredSquare {
+    height: 5vh;
+    width: 5vh;
+    background-color: #006e6e;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+
+.githubBtn {
+    background-color: #002020;
+    border: 1px solid rgb(0, 186, 186);
+    width: 30vw;
+    height: 6vh;
+    margin-bottom: 3vh;
+    margin-right: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.githubBtn * {
+    display: inline;
+}
+
+.githubBtn i {
+    color: #dedede;
+    display: inline;
+}
+
+.githubBtn p {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.liveBtn {
+    width: 30vw;
+    height: 6vh;
+    background-color: rgb(0, 186, 186);
+    border: 1px solid rgb(0, 186, 186);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vh;
+    margin-left: 3vw;
+}
+
+.liveBtnText {
+    text-decoration: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+<<<<<<< HEAD
+.coloredSquare {
+    height: 5vh;
+    width: 5vh;
+    background-color: #006e6e;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%) rotate(45deg);
+}
+
+.githubBtn {
+    background-color: #002020;
+    border: 1px solid rgb(0, 186, 186);
+    width: 30vw;
+    height: 6vh;
+    margin-bottom: 3vh;
+    margin-right: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.githubBtn * {
+    display: inline;
+}
+
+.githubBtn i {
+    color: #dedede;
+    display: inline;
+}
+
+.githubBtn p {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.liveBtn {
+    width: 30vw;
+    height: 6vh;
+    background-color: rgb(0, 186, 186);
+    border: 1px solid rgb(0, 186, 186);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vh;
+    margin-left: 3vw;
+}
+
+.liveBtnText {
+    text-decoration: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+=======
+>>>>>>> ProjectsExperimental
+#projectControls {
+    font-size: 3rem;
+    color: #dedede;
+}
+
+#leftProjectArr {
+    margin-right: 2.5vw;
+<<<<<<< HEAD
+=======
+    transition: color 0.5s;
+>>>>>>> ProjectsExperimental
+}
+
+#rightProjectArr {
+    margin-left: 2.5vw;
+<<<<<<< HEAD
+}
+
+#contactSec {
+    margin-top: 10vh;
+=======
+    transition: color 0.5s;
+}
+
+#contactSec {
+    padding-top: 15vh;
+    margin-top: -5vh;
+>>>>>>> ProjectsExperimental
+}
+
+label {
+    color: #002020;
+}
+input, textarea {
+    background-color: rgb(0, 43, 43);
+    border: 1px solid rgb(0, 186, 186);
+    width: 100%;
+    text-align: left;
+    color: #dedede;
+}
+
+input {
+    height: 7vh;
+    padding: 0 2rem;
+
+}
+
+textarea {
+    padding: 1rem 2rem;
+}
+
+*::placeholder {
+    color: #dedede;
+}
+
+#submit {
+    background-color: rgb(0, 186, 186);
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+#waves2 {
+    width: 100%;
+<<<<<<< HEAD
+}
+
+#fastContactSec {
+    background: #002020;
+    background: linear-gradient(to top, #002020 10%, #006E6E 40%);
+=======
+    position: relative;
+    top: 1vh;
+}
+
+footer {
+    background-color: #006e6e;
+}
+
+#greetMemoji {
+    width: 80vw;
+    margin: 0;
+    position: relative;
+    top: 0.6vh;
+}
+
+#hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #dedede;
+    margin: 0;
+    z-index: 50;
+>>>>>>> ProjectsExperimental
+}
