@@ -60,18 +60,27 @@ a {
 
 /*  HEADER  */
 
+#header {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 900;
+}
+
 #navbar {
     display: flex;
     overflow: hidden;
     background-color: #333;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100vw;
     height: calc(10vh - 1px); /* -1px because of the bottom border which is 1px */
     background: #002020;
     background: radial-gradient(circle farthest-corner at right center, #002020 0%, #006E6E 100%);
     border-bottom: 1px solid rgb(0, 186, 186);
-    z-index: 10;
+    z-index: 999;
     justify-content: space-between;
     align-items: center;
 }
@@ -89,31 +98,64 @@ a {
 }
 
 #bars {
-    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 #iconBg {
     background-color: rgb(0, 186, 186);
     height: 100%;
     width: 18vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
 #x {
-    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 #nav {
-    position: absolute;
-    left: 100%;
+    position: fixed;
+    top: -35vh;
+    /*top: 9.6vh;*/
+    left: 00%;
     display: none;
+    z-index: 900;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #002020;
+    background: linear-gradient(to left, #002020 0%, #006e6e 75%); 
+    transition: top 1s;
 }
+
+
 
 #navList {
     list-style-type: none;
 }
+
+
+#navList li {
+    text-align: center;
+    padding: 2.5vh 33vw;
+    border-top: 1px solid rgb(0, 186, 186);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
 
 /*  MAIN    */
 
@@ -126,7 +168,8 @@ main {
 #heroSec {
     background: #002020;
     background: linear-gradient(to left, #00202000 0%, #006e6e 75%);  
-    padding-top: 5vh;
+    padding-top: 10vh;
+    margin-top: -5vh;
     padding-bottom: 0;
     height: 90vh;
     width: 100%;
@@ -195,7 +238,8 @@ h1 {
 
 #aboutMeSec {
     height: 90vh;
-    padding-top: 5vh;
+    padding-top: 15vh;
+    margin-top: -5vh;
 }
 
 
@@ -207,6 +251,11 @@ h1 {
 
 #blinkingMemoji {
     width: 80vw;
+}
+
+#skillSec {
+    padding-top: 12vh;
+    margin-top: -12vh;
 }
 
 .skillContainer {
@@ -230,17 +279,26 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1vh;
+    margin-top: 3vh;
 }
 
 #projectsSec {
-    padding-top: 10vh;
+    padding-top: 15vh;
+    margin-top: -5vh;
 }
 
 .project {
     border: 1px solid transparent;
     height: 44vh;
     width: 98%;
+    background-color: #006e6e;
+   /* background: linear-gradient(to top, #002020 10%, #006E6E 75%); */
+}
+
+.project2 {
+    border: 1px solid transparent;
+    height: 44vh;
+    width: 100%;
     background-color: #006e6e;
    /* background: linear-gradient(to top, #002020 10%, #006E6E 75%); */
 }
@@ -252,10 +310,6 @@ h1 {
     width: 100%;
 }
 
-#projectsOnlyDiv {
-    border: 1px solid red;
-}
-
 .gradientBorderDiv {
     display: flex;
     justify-content: center;
@@ -265,6 +319,35 @@ h1 {
     background: #002020;
     background: linear-gradient(to top, #002020 10%, #006E6E 75%);
     margin: 5vh 0;
+    transition: all 1s;
+}
+
+#gradientId1 {
+    position: relative;
+    bottom: 0vh;
+    left: -78vw;
+    width: 90%;
+    transform: scale(0.85);
+}
+
+#gradientId2 {
+    position: relative;
+    bottom: 50vh;
+    left: 5vw;
+    width: 90%;
+}
+
+#gradientId3 {
+    position: relative;
+    bottom: 100vh;
+    left: 87vw;
+    width: 90%;
+    transform: scale(0.85);
+}
+
+#projectsOnlyDiv{
+
+    height: 50vh;
 }
 
 .projectBgImg {
@@ -279,75 +362,20 @@ h1 {
 }
 
 #projectBgImg1 {
-    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/productDesktopView.png);
+    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/codeWellMeetDesktop.webp);
 }
 
 #projectBgImg2 {
-    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/podDesktopView.png);
+    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/podDesktopView.webp);
 }
 
 #projectBgImg3 {
-    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/gridDesktopView\ Kopie.png);
+    background-image: linear-gradient(to top, rgba(8, 31, 32, 80%) 20%, rgba(46, 108, 109, 0%) 75%), url(./portfolioPics/gridDesktopView.webp);
 }
 
 .projectHeading {
     font-weight: 400;
     z-index: 5;
-}
-
-.coloredSquare {
-    height: 5vh;
-    width: 5vh;
-    background-color: #006e6e;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 50%) rotate(45deg);
-}
-
-.githubBtn {
-    background-color: #002020;
-    border: 1px solid rgb(0, 186, 186);
-    width: 30vw;
-    height: 6vh;
-    margin-bottom: 3vh;
-    margin-right: 3vw;
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-}
-
-.githubBtn * {
-    display: inline;
-}
-
-.githubBtn i {
-    color: #dedede;
-    display: inline;
-}
-
-.githubBtn p {
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-.liveBtn {
-    width: 30vw;
-    height: 6vh;
-    background-color: rgb(0, 186, 186);
-    border: 1px solid rgb(0, 186, 186);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3vh;
-    margin-left: 3vw;
-}
-
-.liveBtnText {
-    text-decoration: none;
-    border: none;
-    text-transform: uppercase;
-    font-weight: 400;
 }
 
 .coloredSquare {
@@ -412,14 +440,17 @@ h1 {
 
 #leftProjectArr {
     margin-right: 2.5vw;
+    transition: color 0.5s;
 }
 
 #rightProjectArr {
     margin-left: 2.5vw;
+    transition: color 0.5s;
 }
 
 #contactSec {
-    margin-top: 10vh;
+    padding-top: 15vh;
+    margin-top: -5vh;
 }
 
 label {
@@ -458,9 +489,25 @@ textarea {
 
 #waves2 {
     width: 100%;
+    position: relative;
+    top: 1vh;
 }
 
-#fastContactSec {
-    background: #002020;
-    background: linear-gradient(to top, #002020 10%, #006E6E 40%);
+footer {
+    background-color: #006e6e;
+}
+
+#greetMemoji {
+    width: 80vw;
+    margin: 0;
+    position: relative;
+    top: 0.6vh;
+}
+
+#hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #dedede;
+    margin: 0;
+    z-index: 50;
 }
