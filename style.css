@@ -500,6 +500,11 @@ h1 {
     justify-content:space-evenly;
 }
 
+.githubLogo {
+    height: 3vh;
+    width: auto;
+}
+
 .githubBtn * {
     display: inline;
 }
@@ -534,18 +539,19 @@ h1 {
 }
 
 #projectControls {
-    font-size: 3rem;
     color: #dedede;
 }
 
 #leftProjectArr {
-    margin-right: 2.5vw;
+    margin-right: 5vw;
     transition: color 0.5s;
+    width: 15vw;
 }
 
 #rightProjectArr {
-    margin-left: 2.5vw;
+    margin-left: 5vw;
     transition: color 0.5s;
+    width: 15vw;
 }
 
 #contactSec {
