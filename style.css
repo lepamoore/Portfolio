@@ -188,7 +188,8 @@ a {
 }
 
 .navIcon {
-    font-size: 2rem;
+    width: 9vw;
+    height: 9vw;
     top: 0;
     right: 0;
     color: white;
@@ -302,9 +303,10 @@ h1 {
     align-items: center;
 }
 
-.heroIcons i {
-    color: white;
+.heroIcon {
     transform: rotate(-45deg);
+    width: 7vw;
+    height: 7vw;
 }
 
 #heroIconDivHTML {
@@ -365,7 +367,8 @@ h1 {
 }
 
 .skillIcons {
-    font-size: 4rem;
+    width: 20vw;
+    height: 20vw;
 }
 
 .skillTitle {
