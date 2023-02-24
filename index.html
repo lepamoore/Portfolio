@@ -8,7 +8,10 @@
     <link rel="shortcut icon" href="./memojis/memojiGreet.webp" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <script src="https://kit.fontawesome.com/fecf12a8da.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/fecf12a8da.js" crossorigin="anonymous"></script>
 </head>
 <body onload="myFunction(x)">
     <header id="header">
@@ -21,19 +24,20 @@
         </div>
         <nav id="nav">
             <ul id="navList">
-                <a href="#heroSec">
+                <a href="#heroScroll">
                     <li>Start</li>
-                </a><a href="#aboutMeSec">
+                </a><a href="#aboutScroll">
                     <li>About Me</li>
-                </a><a href="#skillSec">
+                </a><a href="#skillScroll">
                     <li>My Skills</li>
-                </a><a href="#projectsSec">
+                </a><a href="#projectsScroll">
                     <li>Latest Projects</li>
-                </a><a href="#contactSec">
+                </a><a href="#contactScroll">
                     <li>Contact Me</li>
                 </a>
             </ul>
         </nav> 
+        <span id="heroScroll"></span>
     </header>
     <main>
 
@@ -57,18 +61,19 @@
             </div>
             <img src="./waves/wave.svg" alt="" id="wave1">
         </section>
+        <span id="aboutScroll"></span>
 
         <section id="aboutMeSec">
             <div class="containerDiv">
                 <h2 id="aboutHeading">About Me</h2>
                 <div class="borderDiv"></div>
                 <p>I'm a 21-year-old Frontend Developer based in Berlin. I really love coding. Specifically, when it takes longer to find the weak point in the code, and you are on the verge of despair, it is best to find the solution. I am pleased that you have landed on my portfolio, please take a look around!</p>
-                <div class="imgCenter">
+                <div class="imgCenter" >
                     <img src="./memojis/memojiFinger.webp" alt="" id="blinkingMemoji">
                 </div>
             </div>
         </section>
-
+        <span id="skillScroll"></span>
         <section id="skillSec">
             <div class="containerDiv">
                 <h2>My Skills</h2>
@@ -119,6 +124,8 @@
                     </div>
                 </div>
             </div>
+        <span id="projectsScroll"></span>
+
         </section>
 
         <section id="projectsSec">
@@ -199,6 +206,8 @@
                     <i class="fa-solid fa-circle-arrow-right" id="rightProjectArr"></i>
                 </div>
             </div>
+        <span id="contactScroll"></span>
+
         </section>
 
         <section id="contactSec">
@@ -206,15 +215,15 @@
                 <h2>Contact Me</h2>
                 <div class="borderDiv"></div>
                 <form action="https://formspree.io/f/xgebkyrr"
-                method="POST">
+                method="POST" id="form">
                     <label for="name">Name:</label><br>
-                    <input type="text" name="name" id="name" placeholder="Your Name"><br>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required><br>
                     <label for="email">E-Mail-Adress:</label><br>
-                    <input type="email" name="email" id="email" placeholder="Your E-Mail-Adress"><br>
+                    <input type="email" name="email" id="email" placeholder="Your E-Mail-Adress" required><br>
                     <label for="subject">Subject:</label><br>
-                    <input type="text" name="subject" id="subject" placeholder="Subject"><br>
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required><br>
                     <label for="message">Your Message:</label><br>
-                    <textarea name="message" id="message" cols="40" rows="10" placeholder="Your Message"></textarea><br>
+                    <textarea name="message" id="message" cols="40" rows="10" placeholder="Your Message" required></textarea><br>
                     <input type="submit" value="SUBMIT" id="submit">
                 </form>
             </div>

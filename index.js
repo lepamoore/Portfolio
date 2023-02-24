@@ -8,6 +8,12 @@ const project3 = document.getElementById("gradientId3");
 const leftArr = document.getElementById("leftProjectArr");
 const rightArr = document.getElementById("rightProjectArr");
 let i = 2;
+const form = document.getElementById("form");
+const fname = document.getElementById("name");
+const email = document.getElementById("email");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
+const Btn = document.getElementById("submit");
 
 
 
@@ -106,8 +112,6 @@ function myFunction(x) {
       leftArr.addEventListener("click", clickLeft);
       rightArr.addEventListener("click", clickRight);
       nav.addEventListener("click", mobileMenuXClick);
-
-
 
     } else {
 
