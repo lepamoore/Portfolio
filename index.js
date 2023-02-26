@@ -16,7 +16,6 @@ const message = document.getElementById("message");
 const Btn = document.getElementById("submit");
 
 
-
 // Callback functions menu
 function mobileMenuBarsClick() {
     nav.style.top = "9.6vh";
@@ -27,7 +26,7 @@ function mobileMenuBarsClick() {
 }
 
 function mobileMenuXClick() {
-    nav.style.top = "-35vh";
+    nav.style.top = "-100vh";
     menuX.style.visibility = "hidden";
     menuBars.style.visibility = "visible";
     menuX.style.opacity = "0";
@@ -39,7 +38,11 @@ function mobileMenuXClick() {
 function clickLeft() {
     if(i > 1) {
     i--;
-    mobileProjectSlide(i);
+    if(x.matches) {
+        mobileProjectSlide(i);
+        } else {
+            desktopProjectSlide(i);
+        }
     if(i == 1) {
         rightArr.style.color = "rgba(222, 222, 222, 100%)";
         leftArr.style.color = "rgba(222, 222, 222, 30%)";
@@ -53,7 +56,12 @@ function clickLeft() {
 function clickRight() {
     if(i < 3) {
     i++;
+    if(x.matches) {
     mobileProjectSlide(i);
+    } else {
+        desktopProjectSlide(i);
+    }
+
     if(i == 3) {
         rightArr.style.color = "rgba(222, 222, 222, 30%)";
         leftArr.style.color = "rgba(222, 222, 222, 100%)";
@@ -94,6 +102,36 @@ function mobileProjectSlide(state) {
 
 }
 
+function desktopProjectSlide(state) {
+    switch(state) {
+        case 1:
+            project3.style.left = "110vw";
+            project2.style.left = "110%";
+            project1.style.left = "3vw";
+            project3.style.transform = "scale(0.85)";
+            project2.style.transform = "scale(0.85)";
+            project1.style.transform = "scale(1)";
+            break;
+        case 2:
+            project3.style.left = "110%";
+            project2.style.left = "3vw";
+            project1.style.left = "-100%";
+            project3.style.transform = "scale(0.85)"
+            project2.style.transform = "scale(1)";
+            project1.style.transform = "scale(0.85)";
+            break;
+        case 3:
+            project3.style.left = "3vw";
+            project2.style.left = "-100%";
+            project1.style.left = "-100vw";
+            project3.style.transform = "scale(1)"
+            project2.style.transform = "scale(0.85)";
+            project1.style.transform = "scale(0.85)";
+            break;
+    }
+
+}
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -104,13 +142,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-function myFunction(x) {
+  function myFunction() {
 
-      menuBars.addEventListener("click", mobileMenuBarsClick);
-      menuX.addEventListener("click", mobileMenuXClick);
-      leftArr.addEventListener("click", clickLeft);
-      rightArr.addEventListener("click", clickRight);
-      nav.addEventListener("click", mobileMenuXClick);
-
+        menuBars.addEventListener("click", mobileMenuBarsClick);
+        menuX.addEventListener("click", mobileMenuXClick);
+        leftArr.addEventListener("click", clickLeft);
+        rightArr.addEventListener("click", clickRight);
+        nav.addEventListener("click", mobileMenuXClick);
   }
-
+  
+  var x = window.matchMedia("(max-width: 1023px)");

@@ -107,6 +107,7 @@
 html {
     background-color: #002020;
     overflow-x: hidden;
+    font-size: 1rem;
 }
 
 body {
@@ -187,12 +188,18 @@ a {
     padding: 1vh 0 0 1vw;
 }
 
+#desktopNav {
+    display: none;
+}
+
 .navIcon {
     width: 9vw;
     height: 9vw;
     top: 0;
     right: 0;
     color: white;
+    max-width: 40px;
+    max-height: 40px;
 }
 
 #bars {
@@ -210,6 +217,7 @@ a {
     height: 100%;
     width: 18vw;
     position: relative;
+    max-width: 100px;
 }
 
 #x {
@@ -224,7 +232,7 @@ a {
 
 #nav {
     position: fixed;
-    top: -35vh;
+    top: -100vh;
     /*top: 9.6vh;*/
     left: 00%;
     display: none;
@@ -234,7 +242,7 @@ a {
     justify-content: center;
     background: #002020;
     background: linear-gradient(to left, #002020 0%, #006e6e 75%); 
-    transition: top 1s;
+    transition: top 0.6s ease-out;
 }
 
 
@@ -295,6 +303,8 @@ h1 {
     position: absolute;
     height: 14vw;
     width: 14vw;
+    max-width: 100px;
+    max-height: 100px;
     background-color: #002020;
     border: 1px solid rgb(0, 186, 186);
     border-radius: 10px;
@@ -307,6 +317,8 @@ h1 {
     transform: rotate(-45deg);
     width: 7vw;
     height: 7vw;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 #heroIconDivHTML {
@@ -339,6 +351,7 @@ h1 {
     height: 90vh;
     margin-top: 5vh;
     padding-top: 10vh;
+    margin-bottom: -5vh;
 }
 
 
@@ -370,6 +383,8 @@ h1 {
 .skillIcons {
     width: 20vw;
     height: 20vw;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .skillTitle {
@@ -437,7 +452,7 @@ h1 {
     position: relative;
     bottom: 50vh;
     left: 5vw;
-    width: 90%;
+    width: 90%; 
 }
 
 #gradientId3 {
@@ -495,6 +510,7 @@ h1 {
     background-color: #002020;
     border: 1px solid rgb(0, 186, 186);
     width: 30vw;
+    max-width: 250px;
     height: 6vh;
     margin-bottom: 3vh;
     margin-right: 3vw;
@@ -525,6 +541,7 @@ h1 {
 .liveBtn {
     width: 30vw;
     height: 6vh;
+    max-width: 250px;
     background-color: rgb(0, 186, 186);
     border: 1px solid rgb(0, 186, 186);
     display: flex;
@@ -549,12 +566,14 @@ h1 {
     margin-right: 5vw;
     transition: color 0.5s;
     width: 15vw;
+    max-width: 100px;
 }
 
 #rightProjectArr {
     margin-left: 5vw;
     transition: color 0.5s;
     width: 15vw;
+    max-width: 100px;
 }
 
 #contactSec {
@@ -591,15 +610,19 @@ textarea {
     background-color: rgb(0, 186, 186);
     margin-top: 3vh;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     font-weight: 300;
+}
+
+#submit:hover {
+    cursor: pointer;
 }
 
 #waves2 {
     width: 100%;
     position: relative;
-    top: 1vh;
+    top: 2.5vh;
 }
 
 footer {
@@ -691,7 +714,7 @@ footer {
     }
     #laptopMemoji {
         width: 80vw;
-        max-width: 450px;
+        display: none;
         position: absolute;
         bottom: 4%;
         left: 50%;
@@ -699,14 +722,14 @@ footer {
     }
     #greetMemoji {
         width: 80vw;
-        max-width: 450px;
+
         margin: 0;
         position: relative;
         top: 0.6vh;
     }
     #blinkingMemoji {
         width: 80vw;
-        max-width: 450px;
+
     }
 
     #wave1 {
@@ -717,5 +740,199 @@ footer {
     }
     .liveBtnText {
         font-size: 0.8rem;
+    }
+    #form {
+        width: 80vw;
+        margin: auto;
+    }
+    #heroIconDivHTML {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 0) rotate(45deg);
+    }
+    
+    #heroIconDivCSS {
+        left: 20%;
+        top: 60%;
+        transform: translate(-50%, 0) rotate(45deg);
+    }
+    
+    #heroIconDivJS {
+        left: 80%;
+        top: 60%;
+        transform: translate(-50%, 0) rotate(45deg);
+    }
+
+    #submit {
+        height: 10vh;
+    }
+
+    #waves2 {
+        top: 5vh;
+    }
+
+    #aboutMeSec {
+        height: 90vh;
+        margin-top: 5vh;
+        margin-bottom: 15vh;
+        padding-top: 10vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 2rem;
+    }
+    #iconBg {
+        display: none;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #desktopNav {
+        display: block;
+        font-size: 0.75rem;
+    }
+
+    #desktopNavList {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        width: 70vw;
+        height: calc(10vh - 1px);
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .navDivs {
+
+        width: 100%;
+        height: calc(10vh - 1px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 1s;
+    }
+
+    .navDivs:hover {
+        background-color: rgb(0, 186, 186);
+        cursor: pointer;
+    }
+
+    .navDivs:last-child:hover {
+        background-color: transparent;
+    }
+
+    #wave1 {
+        bottom: -10%;
+    }
+
+
+
+    #laptopMemoji {
+        display: none;
+    }
+
+    .containerDiv {
+        width: 60%;
+        margin: auto;
+    }
+
+    .githubBtn {
+        max-width: 250px;
+    }
+
+    .liveBtn {
+        max-width: 250px;
+    }
+
+    #gradientId2 {
+        left: 3vw;
+    }
+
+    #form {
+        width: 50vw;
+        margin: auto;
+    }
+    
+
+
+    button:hover {
+        cursor: pointer;
+    }
+    #heroIconDivHTML {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 0) rotate(45deg);
+    }
+    
+    #heroIconDivCSS {
+        left: 20%;
+        top: 70%;
+        transform: translate(-50%, 0) rotate(45deg);
+    }
+    
+    #heroIconDivJS {
+        left: 80%;
+        top: 70%;
+        transform: translate(-50%, 0) rotate(45deg);
+    }
+    #navContactBtn {
+        width: 10vw;
+        height: 5vh;
+        color: #DEDEDE;
+        background-color: #216E6E;
+        border: 1px solid #006e6e;
+        border-radius: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        min-width: 150px;
+    }
+    #navContactBtn:hover {
+        background-color: rgb(0, 186, 186);
+        color: #dedede;
+
+    }
+    .navDivs a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navDivs:last-child {
+        height: auto;
+        width: auto;
+        margin: 0 2vw;
+    }
+
+
+    #submit {
+        height: 10vh;
+    }
+
+    #gradientId1 {
+        left: -100%;
+    }
+
+    #gradientId3 {
+        left: 110%;
+    } 
+
+    textarea, input {
+        font-size: 0.7rem;
+
+        
+    }
+
+    #aboutMeSec {
+        height: 90vh;
+        margin-top: 5vh;
+        margin-bottom: 15vh;
+        padding-top: 10vh;
     }
 }
