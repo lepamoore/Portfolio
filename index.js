@@ -104,18 +104,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
 function myFunction(x) {
-    if (x.matches) { 
+
       menuBars.addEventListener("click", mobileMenuBarsClick);
       menuX.addEventListener("click", mobileMenuXClick);
       leftArr.addEventListener("click", clickLeft);
       rightArr.addEventListener("click", clickRight);
       nav.addEventListener("click", mobileMenuXClick);
 
-    } else {
-
-    }
   }
 
-var x = window.matchMedia("(max-width: 767px)");

@@ -266,8 +266,7 @@ main {
 #heroSec {
     background: #002020;
     background: linear-gradient(to left, #00202000 0%, #006e6e 75%);  
-    padding-top: 10vh;
-    margin-top: -5vh;
+    padding-top: 5vh;
     padding-bottom: 0;
     height: 90vh;
     width: 100%;
@@ -285,6 +284,7 @@ h1 {
 
 #laptopMemoji {
     width: 80vw;
+    max-width: 300px;
     position: absolute;
     bottom: 4%;
     left: 50%;
@@ -337,8 +337,8 @@ h1 {
 
 #aboutMeSec {
     height: 90vh;
-    padding-top: 15vh;
-    margin-top: -5vh;
+    margin-top: 5vh;
+    padding-top: 10vh;
 }
 
 
@@ -350,11 +350,12 @@ h1 {
 
 #blinkingMemoji {
     width: 80vw;
+    max-width: 300px;
 }
 
 #skillSec {
 
-    margin-top: 12vh;
+    margin-top: 5vh;
 }
 
 .skillContainer {
@@ -380,11 +381,13 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-top: 3vh;
+    height: 10vh;
 }
 
+
 #projectsSec {
-    padding-top: 15vh;
-    margin-top: -5vh;
+
+    margin-top: 15vh;
 }
 
 .project {
@@ -555,8 +558,8 @@ h1 {
 }
 
 #contactSec {
-    padding-top: 15vh;
-    margin-top: -5vh;
+    margin-top: 10vh;
+    padding-top: 5vh;
 }
 
 label {
@@ -605,6 +608,7 @@ footer {
 
 #greetMemoji {
     width: 80vw;
+    max-width: 300px;
     margin: 0;
     position: relative;
     top: 0.6vh;
@@ -616,4 +620,102 @@ footer {
     border: 1px solid #dedede;
     margin: 0;
     z-index: 50;
+}
+
+@media screen and (min-width:767px) and (max-width:1023px){
+    html {
+        font-size: 2rem;
+    }
+
+    *::placeholder {
+        font-size: 0.8rem;
+    }
+
+    input, textarea {
+        font-size: 1rem;
+        word-spacing: 3px;
+    }
+
+    #skillBorderDiv {
+        margin-bottom: 10vh;
+    }
+    .skillContainer {
+        margin-top: 0; 
+        padding: 3vh;
+        height: 60vh;
+        background-color: rgb(5, 57, 57);
+        border: 1px solid rgb(0, 186, 186);
+    }
+
+    .skillCenterContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3vh;
+        height: 20vh;
+    }
+
+    #skillGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  60vh 60vh 60vh;
+        gap: 3vw;
+        grid-template-areas: 
+        "html css"
+        "js git"
+        "bash bash"
+        ;
+    }
+    #htmlContainer {
+        grid-area: html;
+        width: 43.5vw;
+    }
+    #cssContainer {
+        grid-area: css;
+        width: 43.5vw;
+    }
+    #jsContainer {
+        grid-area: js;
+        width: 43.5vw;
+    }
+    #gitContainer {
+        grid-area: git;
+        width: 43.5vw;
+    }
+    #bashContainer {
+        grid-area: bash;
+        width: 43.5vw;
+        align-self: center;
+        justify-self: center;
+        
+    }
+    #laptopMemoji {
+        width: 80vw;
+        max-width: 450px;
+        position: absolute;
+        bottom: 4%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    #greetMemoji {
+        width: 80vw;
+        max-width: 450px;
+        margin: 0;
+        position: relative;
+        top: 0.6vh;
+    }
+    #blinkingMemoji {
+        width: 80vw;
+        max-width: 450px;
+    }
+
+    #wave1 {
+        bottom: -3.5%;
+    }
+    .githubBtnText {
+        font-size: 0.8rem;
+    }
+    .liveBtnText {
+        font-size: 0.8rem;
+    }
 }
